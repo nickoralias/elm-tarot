@@ -133,7 +133,7 @@ suitList =
 minorArcana : List Card
 minorArcana =
     List.Extra.lift2 (,) rankList suitList
-        |> List.map (\( fst, snd ) -> Minor fst snd)
+        |> List.map (\( rank, suit ) -> Minor rank suit)
 
 
 majorArcana : List Card
